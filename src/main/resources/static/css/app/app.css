@@ -1,0 +1,37 @@
+/* Table structure with ul and li (responsive) */
+
+.button {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.headingsmall
+{
+  color: #3a4355;
+font-weight:bold;
+ 
+-webkit-text-shadow: 0px 0px 1px #119af2;
+-moz-text-shadow: 0px 0px 1px #119af2;
+-o-text-shadow: 0px 0px 1px #119af2;
+font: 400 24px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+text-shadow: 0px 0px 1px #119af2;
+text-transform:uppercase;
+
+}
+
+.servicetable
+{
+border:1px solid #000;
+padding:2px;
+width:100%;
+display:inline-block;
+
+font: 200 24px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+text-shadow: 0px 0px 1px #119af2;
+}

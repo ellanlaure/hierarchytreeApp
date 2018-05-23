@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Main Page</title>
+</head>
+<body ng-app="hierarchytree">
+<hr/>
+<div class="container" ng-controller="MyController">
+    <div>
+        <button ng-click="hierarchytree()" class="button">Display Hierarchy Tree</button>
+    </div>
+    <hr/>
+<h2 class="headingsmall">Hierarchy Tree</h2>
+ 	
+ 	<table>
+ 		<tr>
+ 			<td>
+				<script type="text/ng-template" id="treeLevel">
+		 			<table class="servicetable"><tr><td>{{ employee.name }}</td>&nbsp;<td></tr>
+						<tr ng-repeat="employee in employee.subordinates"><td >&nbsp;</td><td ng-include="'treeLevel'"> </td></tr>
+					</table>
+				</script>
+			 <table>
+			 	<tr><td>{{ employee.name }}</td></tr>
+				<tr><td ng-repeat="employee in employees" ng-include="'treeLevel'"></td></tr>
+			 </table>
+ 			</td>
+ 		</tr>
+ 	</table>
+
+</div>
+</body>
+<script src="js/lib/angular_1.5.8/angular.min.js"></script>
+<script src="js/app/app.js"></script>
+<script src="js/app/controller.js"></script>
+<link rel="stylesheet" href="css/app/app.css"/>
+</html>
